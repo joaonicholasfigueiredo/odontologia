@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+    <display-name>CadastroServicoWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ServicoController</display-name>
+    <display-name>ConsultaController</display-name>
+    <servlet-name>ServicoController</servlet-name>
+    <servlet-name>ConsultaController</servlet-name>
+    <servlet-class>br.com.odonto.bll.ServicoController</servlet-class>
+    <servlet-class>br.com.odonto.bll.ConsultaController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServicoController</servlet-name>
+    <servlet-name>ConsultaController</servlet-name>
+    <url-pattern>/ServicoController</url-pattern>
+    <url-pattern>/ConsultaController</url-pattern>
+  </servlet-mapping>
+</web-app>
+
+
+<!--Nesse arquivo será apontado os arquivos servelet. É funcamental ele para que seja executado o projeto.-->
